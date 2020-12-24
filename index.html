@@ -24,7 +24,7 @@
       background-color: #ffffff;
       background: radial-gradient(circle, #ffffff 0%, #ffffff4f 35%, #ffffff1a 65%, #ffffff00 100%);
       animation-name: moon-move;
-      animation-duration: 5s;
+      animation-duration: 15s;
       animation-timing-function: ease-in-out;
       animation-iteration-count: infinite;
     }
@@ -79,12 +79,51 @@
       background-size: contain;
       background-image: url(christmas-tree-top-left.png);
     }
+    .snow-star {
+      position: absolute;
+      width: 20vh;
+      height: 20vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url(snow-star.png);
+      top:0vh;
+      left: 0vh;
+      animation-name: snow-star-anim;
+      animation-duration: 25s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes snow-star-anim {
+      0% {
+        transform: 
+          translateX(120vw)
+          translateY(-100vh)
+      }
+      40% {
+        transform: 
+          translateX(50vw)
+          translateY(60vh)
+          rotateZ(-360deg)
+          rotateX(360deg);
+      }
+      100% {
+        transform: 
+          translateX(-20vw)
+          translateY(110vh)
+          rotateZ(360deg);
+      }
+    }
   </style>
 </head>
 <body>
   <div class="moon"></div>
   <div class="xtree"></div>
   <div class="xtree-label"></div>
+
+  <div class="snow-star"></div>
+
   <div class="xtree-top-left"></div>
 </body>
 </html>
