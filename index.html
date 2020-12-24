@@ -5,17 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>New Year Postcard</title>
   <style>
-    .postcard {
+    body {
+      background: #000000;
+      margin: 0px;
+      padding: 0px;
+    }
+    .xtree {
+      position: absolute;
+      bottom: 0px;
+      display: inline-block;
       width: 100%;
-      height: 400px;
+      height: 80%;
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
-      background-image: url(http://www.artofglutenfreebaking.com/wp-content/uploads/2012/12/Elf-New-Year-Card.jpg);
+      background-image: url(christmas-tree.png);
+    }
+    .xtree-label {
+      position: absolute;
+      top: 30%;
+      display: inline-block;
+      width: 100%;
+      height: 30%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url(new-year-2020-label.png);
+    }
+    .xtree-top-left {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      display: inline-block;
+      width: 50%;
+      height: 50%;
+      background-position: top left;;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url(christmas-tree-top-left.png);
     }
   </style>
 </head>
 <body>
-  <div class="postcard"></div>
+  <div class="xtree"></div>
+  <div class="xtree-label"></div>
+  <div class="xtree-top-left"></div>
 </body>
 </html>
